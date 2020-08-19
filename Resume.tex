@@ -22,15 +22,15 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 \usepackage{hyperref}
 \usepackage{xcolor}
 \definecolor{darkblue}{rgb}{0.04,0,0.5}
 \hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
 
-\name{Ming Fong} % Your name
-\address{\href{mailto:mingfong@berkeley.edu}{mingfong@berkeley.edu}} % Your phone number and email
-\address{\href{https://www.linkedin.com/in/mingfong/}{linkedin.com/in/mingfong}} % Your secondary addess (optional)
+\name{Arnav Thareja} % Your name
+\address{\href{mailto:athareja@uw.edu}{athareja@uw.edu} \\ \href{https://arnavthareja.github.io}{arnavthareja.github.io}} % Your phone number and email
+\address{\href{https://www.linkedin.com/in/arnavthareja/}{linkedin.com/in/arnavthareja} \\ \href{https://www.github.com/arnavthareja}{github.com/arnavthareja}} % Your secondary addess (optional)
 
 \begin{document}
 
@@ -40,18 +40,20 @@
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Microsoft Corporation}{June 2019 – August 2019}{Software Engineering Intern}{Redmond, WA}
-\item Intern on the Azure Core OS and Intelligent Edge (Windows) team
-\item Developed a Windows Presentation Foundation (WPF) application using C\# and XAML
-\item Set up SQL database tables with relevant queries and REST APIs
-\item Used agile methodologies with a small team to coordinate workflow and iterative development
+\begin{rSubsection}{Mathnasium}{May 2019 – June 2020}{Instructor}{Renton, WA}
+\item Taught students grades K-12 topics in math ranging from basic addition and subtraction to calculus
+\item Helped develop an intuitive understanding of math concepts in students
 \end{rSubsection}
 
-%------------------------------------------------
+\begin{rSubsection}{FIRST Tech Challenge Team 8693: The Scarabs}{August 2016 – June 2020}{Project Manager}{Renton, WA}
+\item Led over 20 team members to successful completion of a FIRST Tech Challenge (FTC) competition robot
+\item Guided and supported technical creation of robots and accompanying software
+\item Increased team efficiency and reduced wasted time in the development process
+\end{rSubsection}
 
-\begin{rSubsection}{Kumon North America, Inc.}{October 2018 – June 2019}{Center Assistant}{Renton, WA}
-\item Tutored students grades 6-12 in Calculus, Algebra, and English writing
-\item Graded and annotated students' classwork and homework
+\begin{rSubsection}{Museum of Flight}{September 2016 – September 2018}{Junior Docent}{Seattle, WA}
+\item Gave presentations about aviation history to Museum of Flight visitors
+\item Made interactive exhibits designed to teach young kids about topics in aviation
 \end{rSubsection}
 
 \end{rSection}
@@ -61,15 +63,17 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
-    \begin{rSubsection}{University of California, Berkeley}{June 2020 – May 2023}{Bachelor of Arts, Physics and Computer Science}{Berkeley, CA}
-        Physics and Computer Science in the College of Letters and Science
+    \begin{rSubsection}{University of Washington}{September 2020 – June 2024}{Bachelor of Science, Computer Science}{Seattle, WA}
+        Computer Science in the Paul G. Allen School of Computer Science \& Engineering
+        \item {\bf Selected Coursework:} Computer Programming I, Calculus I and II
+        \item {\bf Projected Coursework:} Computer Programming II, Foundations of Computing I and II, Data Structures and Algorithms, Calculus III, Linear Algebra
         \end{rSubsection}
 
-    \begin{rSubsection}{Hazen Senior High School}{September 2016 – June 2020}{High School Diploma}{Renton, WA}
+    \begin{rSubsection}{Hazen Senior High School}{August 2016 – June 2020}{High School Diploma}{Renton, WA}
         \item {\bf Cumulative GPA:} 4.0 {\bf Rank:} 1/383
-        \item {\bf SAT:} 1560 {\bf SAT Math II:} 800 {\bf SAT Physics:} 800 {\bf AP:} 5s on all 12 exams taken
-        \item {\bf Activities:} Math Club (President), Earth Corps (President), Table Tennis Club (Founder, President)
-        \item {\bf Awards:} Math Departmental Achievement Award, Rotary Youth of the Month, YMCA Leadership Award (x2)
+        \item {\bf SAT:} 1570 {\bf SAT Math II:} 800 {\bf SAT Physics:} 800 {\bf AMC 12:} 85.5
+        \item {\bf Activities:} Robotics Club (Project Manager), Table Tennis Club (Co-Founder, Vice President), Film Club (Executive Producer, General Secretary)
+        \item {\bf Awards:} National Merit Finalist, National AP Scholar, FTC Dean's List Semifinalist
         \end{rSubsection}
     \end{rSection}
 %----------------------------------------------------------------------------------------
@@ -78,19 +82,19 @@
 
 \begin{rSection}{Projects}
 
-\begin{rSubsection}{\href{https://www.kaggle.com/c/halite/leaderboard}{Halite AI Programming Challenge by Two Sigma}}{June 2020 – September 2020}{}{}
-\item Ranked in the top 5\% of all submissions on the global leaderboard
-\item Implemented creative algorithms in a Python AI to compete in the Halite IV simulation environment
+\begin{rSubsection}{\href{https://github.com/arnavthareja/music-analysis}{Popular Music Analysis}}{February 2020 – August 2020}{}{}
+\item Analyzed features in popular music using Python and searched for patterns in the features
+\item Used the Spotify API to get data about popular music and music features from Spotify
+\item Implemented a Machine Learning model using Scikit-Learn to predict a song's popularity given its features
 \end{rSubsection}
 
 \begin{rSubsection}{\href{https://yearbook-hhs.web.app/}{Yearbook 2020}}{June 2020 – July 2020}{}{}
-\item Developed a web app for students and graduates to virtually sign yearbooks
-\item Created with HTML/CSS/JavaScript and Google Firebase for hosting and backend
+\item Developed a web app for students and graduates to sign yearbooks virtually
+\item Created using HTML, CSS, and JavaScript and utilized Google Firebase for hosting and backend
 \end{rSubsection}
 
-\begin{rSubsection}{\href{https://github.com/microsoft/QuantumKatas}{Microsoft Quantum Katas}}{July 2019 – August 2019}{}{}
-\item Open source contributor to the Quantum Kata Tutorials team through Microsoft's 2019 Hackathon
-\item Designed a Q\# task for learning quantum superposition with integration into Jupyter Notebook and C\#
+\begin{rSubsection}{\href{https://arnavthareja.github.io}{Personal Website}}{July 2020 – August 2020}{}{}
+\item Created a responsive, user-focused website design using HTML, SCSS, and JavaScript
 \end{rSubsection}
 
 \end{rSection}
@@ -102,9 +106,9 @@
 \begin{rSection}{Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Software Languages & Python, Java, C\#, SQL, HTML/CSS/JavaScript \\
-Tools & Jupyter Notebook, Visual Studio, Eclipse, Git \\
-Languages & English, Mandarin, Cantonese, German \\
+Software Languages & Python, Java, HTML, CSS, SCSS, JavaScript \\
+Tools & Jupyter Notebook, Eclipse, Git, GitHub \\
+Languages & English, German \\
 \end{tabular}
 
 \end{rSection}
