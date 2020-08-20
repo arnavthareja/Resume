@@ -35,7 +35,7 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \addressSep {$\diamond$} % Set default address separator to a diamond
+\def \addressSep {$\mid$} % Set default address separator to a vertical bar (originally a diamond using $\diamond$)
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
@@ -116,6 +116,21 @@
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
+  \begin{list}{}{\leftmargin=0em} % Removed bullet points from item lists (original line below)
+  % \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  }{
+  \end{list}
+  \vspace{0.4em} % Some space after the list of bullet points (Original was 0.5em)
+}
+
+%----------------------------------------------------------------------------------------
+%	PROJECT FORMATTING
+%----------------------------------------------------------------------------------------
+
+\newenvironment{project}[3]{ % 3 input arguments - company name, year(s) employed, and project context (personal/class)
+ {\bf #1} | {\em #3} \hfill {#2} % Bold company name and date on the right
+  \smallskip
   \begin{list}{}{\leftmargin=0em} % Removed bullet points from item lists (original line below)
   % \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
