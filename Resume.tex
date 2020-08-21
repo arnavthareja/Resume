@@ -1,3 +1,5 @@
+% !TEX program = xelatex
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Medium Length Professional CV
 % LaTeX Template
@@ -25,12 +27,12 @@
 \usepackage[left=0.5in,top=0.35in,right=0.5in,bottom=0.35in]{geometry} % Document margins
 \usepackage{hyperref}
 \usepackage{xcolor}
-\definecolor{darkblue}{rgb}{0,0,0} % Originally 0.4,0,0.5
-\hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
+%\definecolor{darkblue}{rgb}{0,0,0} % Originally 0.4,0,0.5
+\hypersetup{colorlinks,breaklinks,linkcolor=black,urlcolor=black,anchorcolor=black,citecolor=black}
 
 \name{Arnav Thareja} % Your name
-\address{858.252.9415 \\ \href{mailto:athareja@uw.edu}{athareja@uw.edu}}
-\address{\href{https://arnavthareja.github.io}{arnavthareja.github.io} \\ \href{https://www.linkedin.com/in/arnavthareja/}{linkedin.com/in/arnavthareja} \\ \href{https://www.github.com/arnavthareja}{github.com/arnavthareja}} % Your phone number and email
+\address{858.252.9415 | \href{mailto:athareja@uw.edu}{athareja@uw.edu}}
+\address{\href{https://arnavthareja.github.io}{arnavthareja.github.io} | \href{https://www.linkedin.com/in/arnavthareja/}{linkedin.com/in/arnavthareja} | \href{https://www.github.com/arnavthareja}{github.com/arnavthareja}} % Your phone number and email
 
 \begin{document}
 
@@ -38,24 +40,30 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
+\vspace{-1em} % Hacky fix for awkward extra vertical space
 \begin{rSection}{Experience}
 
 \begin{rSubsection}{Mathnasium}{May 2019 – June 2020}{Instructor}{Renton, WA}
-\item Taught students grades K-12 topics in math ranging from basic addition and subtraction to calculus
+\item Taught students grades K-12 topics in math up to calculus
 \item Helped develop an intuitive understanding of math concepts in students
 \end{rSubsection}
 
 \begin{rSubsection}{FIRST Tech Challenge Team 8693: The Scarabs}{August 2016 – June 2020}{Project Manager}{Renton, WA}
-\item Led over 20 team members to successful completion of a FIRST Tech Challenge (FTC) competition robot
-\item Guided and supported technical creation of robots and accompanying software
+\item Led and mentored a team of over 20 members to successful completion of a competition robot
+\item Guided technical creation of robots and accompanying software
 \item Implemented a TensorFlow-based object detection model to be integrated with robot pathfinding algorithms
 \item Planned public events to introduce elementary and middle schoolers in Renton to STEM
-\item Increased team efficiency and reduced wasted time in the development process
+\item Increased team efficiency and optimized the development process
 \end{rSubsection}
 
 \begin{rSubsection}{The Museum of Flight}{September 2016 – December 2018}{Junior Docent}{Seattle, WA}
-\item Gave presentations about aviation history to Museum of Flight visitors as the Museum's first Junior Docent
+\item Gave presentations on aviation history to Museum of Flight visitors as the Museum's first Junior Docent
 \item Made interactive exhibits designed to teach young kids about topics in aviation
+\end{rSubsection}
+
+\begin{rSubsection}{Boy Scouts of America}{June 2015 – June 2020}{Eagle Scout \& Assistant Senior Patrol Leader}{Newcastle, WA}
+\item Led the planning and successful execution of a large-scale kitchen remodel project at Renton Lions Youth Camp
+\item Planned and led troop meetings and volunteered in various community projects
 \end{rSubsection}
 
 \end{rSection}
@@ -66,18 +74,17 @@
 
 \begin{rSection}{Education}
 
-\begin{rSubsection}{University of Washington}{Expected Graduation: June 2024}{Bachelor of Science, Computer Science}{Seattle, WA}
+\begin{education}{University of Washington}{Expected Graduation: June 2024}{Bachelor of Science, Computer Science}{Seattle, WA}
 \item {\bf GPA:} N/A (first-quarter freshman)
 \item {\bf Selected Coursework:} Computer Programming I, Calculus I and II
 \item {\bf Projected Coursework:} Computer Programming II, Foundations of Computing I and II, Data Structures and Parallelism, Calculus III, Matrix Algebra with Applications
-\end{rSubsection}
+\end{education}
 
-\begin{rSubsection}{Hazen Senior High School}{August 2016 – June 2020}{High School Diploma}{Renton, WA}
-\item {\bf GPA:} 4.0 {\bf Rank:} 1/383
-\item {\bf SAT:} 1570 {\bf SAT Math II:} 800 {\bf SAT Physics:} 800 {\bf AMC 12:} 85.5
+\begin{education}{Hazen Senior High School}{August 2016 – June 2020}{}{Renton, WA}
+\item {\bf GPA:} 4.0 {\bf Rank:} 1/383 {\bf SAT:} 1570 {\bf SAT Math II:} 800 {\bf SAT Physics:} 800 {\bf AMC 12:} 85.5
 \item {\bf Activities:} Robotics Club (Project Manager), National Honor Society, Table Tennis Club (Co-Founder, Vice President)
-\item {\bf Awards:} National Merit Finalist, National AP Scholar, FTC Dean's List Semifinalist
-\end{rSubsection}
+\item {\bf Awards:} National Merit Finalist, National AP Scholar, FTC Dean's List Semifinalist, Oliver M. Hazen Award
+\end{education}
 
 \end{rSection}
 
@@ -87,19 +94,20 @@
 
 \begin{rSection}{Projects}
 
-\begin{project}{\href{https://github.com/arnavthareja/music-analysis}{Popular Music Analysis}}{February 2020 – August 2020}{Personal Project}
+\begin{project}{\href{https://github.com/arnavthareja/music-analysis}{Popular Music Analysis}}{\href{https://github.com/arnavthareja/music-analysis}{github.com/arnavthareja/music-analysis}}{Personal Project – In Progress}
 \item Analyzed features in popular music using Python and searched for patterns
 \item Used the Spotify API to get data about popular music and features from Spotify
-\item Implemented a Machine Learning model using Scikit-Learn to predict a song's popularity given its features
+%\item Implemented a Machine Learning model using Scikit-Learn to predict a song's popularity given its features
 \end{project}
 
-\begin{project}{\href{https://yearbook-hhs.web.app/}{Yearbook 2020}}{June 2020 – July 2020}{Personal Project}
-\item Developed a web application for students and graduates to sign yearbooks virtually
+\begin{project}{\href{https://yearbook-hhs.web.app/}{Yearbook 2020}}{\href{https://yearbook-hhs.web.app/}{yearbook-hhs.web.app}}{Personal Project}
+\item Designed and developed a web application for students and graduates to sign yearbooks virtually
 \item Created using HTML, CSS, JavaScript, and Google Firebase for user authentication, cloud storage, and NoSQL database
 \end{project}
 
-\begin{project}{Table Tennis Sign-In}{August 2019}{Personal Project}
+\begin{project}{Table Tennis Sign-In}{}{Personal Project}
 \item Created a Java application to enable a quick and paperless sign-in process for Hazen High School's Table Tennis Club
+\item Utilized the Google Sheets API to upload sign-in records to the club's Google Sheet for membership tracking and analytics
 \item Used Swing to create a Graphical User Interface for a smooth user experience
 \end{project}
 
@@ -115,9 +123,9 @@
 
 \begin{rSection}{Skills}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-& Communication, Leadership, Project Management \\
 Languages & Java, Python, JavaScript, HTML, CSS, SCSS \\
 Tools & Jupyter Notebook, Eclipse, Visual Studio Code, Git, GitHub, Microsoft Office \\
+Other Skills & Communication, Leadership, Project Management \\
 \end{tabular}
 
 \end{rSection}

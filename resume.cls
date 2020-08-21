@@ -28,6 +28,10 @@
 
 \pagestyle{empty} % Suppress page numbers
 
+% Set main fonts
+\usepackage{fontspec}
+\setmainfont[Color=black, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
 %----------------------------------------------------------------------------------------
@@ -35,7 +39,7 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \addressSep {$\mid$} % Set default address separator to a vertical bar (originally a diamond using $\diamond$)
+%\def \addressSep {$\mid$} % Set default address separator to a vertical bar (originally a diamond using $\diamond$)
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
@@ -116,32 +120,50 @@
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
+  \begin{list}{$\cdot$}{\leftmargin=1em} % Removed bullet points from item lists (original line below)
+  % \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  }{
+  \end{list}
+  \vspace{0.2em} % Some space after the list of bullet points (Original was 0.5em)
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION FORMATTING
+%----------------------------------------------------------------------------------------
+
+\newenvironment{education}[4]{ % 4 input arguments - school name, year(s) attended, degree title and location
+ {\bf #1} | {\em #4} \hfill {#2} % Bold school name, italicized location, and date on the right
+  \ifthenelse{\equal{#3}{}}{}{ % If the degree title is not specified, don't print it
+  \\
+  {\em #3} % Italic job title and location
+  }\smallskip
   \begin{list}{}{\leftmargin=0em} % Removed bullet points from item lists (original line below)
   % \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.4em} % Some space after the list of bullet points (Original was 0.5em)
+  \vspace{0.2em} % Some space after the list of bullet points (Original was 0.5em)
 }
 
 %----------------------------------------------------------------------------------------
 %	PROJECT FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{project}[3]{ % 3 input arguments - company name, year(s) employed, and project context (personal/class)
- {\bf #1} | {\em #3} \hfill {#2} % Bold company name and date on the right
+\newenvironment{project}[3]{ % 3 input arguments - project name, timeframe, and project context (personal/class)
+ {\bf #1} | {\em #3} \hfill {\em #2} % Bold project name, italicized context, and date on the right
   \smallskip
-  \begin{list}{}{\leftmargin=0em} % Removed bullet points from item lists (original line below)
+  \begin{list}{$\cdot$}{\leftmargin=1em} % Removed bullet points from item lists (original line below)
   % \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.4em} % Some space after the list of bullet points (Original was 0.5em)
+  \vspace{0.2em} % Some space after the list of bullet points (Original was 0.5em)
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
-\def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
-\def\nameskip{\bigskip} % The space after your name at the top
-\def\sectionskip{\medskip} % The space after the heading section
+\def\sectionlineskip{\smallskip} % The space above the horizontal line for each section 
+\def\nameskip{\smallskip} % The space after your name at the top
+\def\sectionskip{\smallskip} % The space after the heading section
