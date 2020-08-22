@@ -274,3 +274,9 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# stuff I want saved locally but not on github
+deedy-resume.cls
+twocolumn.tex
+twocolumn.pdf
+fonts/raleway/
