@@ -1,4 +1,4 @@
 # Resume
 My resume  
 
-The template is from [Ming Fong](https://www.github.com/evilpegasus)
+The original template is from [Ming Fong](https://www.github.com/evilpegasus), I have made some modifications
