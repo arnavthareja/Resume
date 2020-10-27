@@ -24,7 +24,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5in,top=0.35in,right=0.5in,bottom=0.35in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.3in,right=0.5in,bottom=0.3in]{geometry} % Document margins
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
@@ -35,39 +35,7 @@
 \address{\faIcon{globe-americas}\hspace{0.3em} \href{https://arnavthareja.github.io}{arnavthareja.github.io}\hspace{0.6em}|\hspace{0.6em}\faIcon{linkedin}\hspace{0.3em} \href{https://www.linkedin.com/in/arnavthareja/}{linkedin.com/in/arnavthareja}\hspace{0.6em}|\hspace{0.6em}\faIcon{github}\hspace{0.3em}\href{https://www.github.com/arnavthareja}{github.com/arnavthareja}} % Your phone number and email
 
 \begin{document}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\vspace{-1em} % Hacky fix for awkward extra vertical space
-\begin{rSection}{Experience}
-
-\begin{rSubsection}{Mathnasium}{May 2019 – June 2020}{Instructor}{Renton, WA}
-\item Taught students grades K-12 topics in math up to calculus
-\item Helped develop an intuitive understanding of math concepts in students
-\item Contributed to smooth operation of the center and interacted with parents and prospective customers
-\end{rSubsection}
-
-\begin{rSubsection}{FIRST Tech Challenge Team 8693: The Scarabs}{September 2016 – June 2020}{Project Manager}{Renton, WA}
-\item Led and mentored a team of over 20 members to successful completion of a competition robot
-\item Guided technical creation of robots and accompanying software
-\item Implemented a TensorFlow-based object detection model to be integrated with robot pathfinding algorithms
-\item Planned public events to introduce elementary and middle schoolers in Renton to STEM
-\item Increased team efficiency and optimized the development process
-\end{rSubsection}
-
-\begin{rSubsection}{The Museum of Flight}{September 2016 – December 2018}{Junior Docent}{Seattle, WA}
-\item Gave presentations on aviation history to Museum of Flight visitors as the Museum's first Junior Docent
-\item Made interactive exhibits designed to teach young kids about topics in aviation
-\end{rSubsection}
-
-\begin{rSubsection}{Boy Scouts of America Troop 499}{June 2015 – June 2020}{Eagle Scout \& Assistant Senior Patrol Leader}{Newcastle, WA}
-\item Led the planning and successful execution of a large-scale kitchen remodel project at Renton Lions Youth Camp
-\item Planned and led troop meetings and volunteered in various community projects
-\end{rSubsection}
-
-\end{rSection}
+\vspace{-1.0em} % Remove extra vertical space
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -77,15 +45,51 @@
 
 \begin{education}{University of Washington}{Expected Graduation: June 2024}{Bachelor of Science, Computer Science}{Seattle, WA}
 \item {\bf GPA:} N/A (first-quarter freshman)
-\item {\bf Selected Coursework:} Computer Programming I, Calculus I and II
-\item {\bf Planned Coursework:} Computer Programming II, Foundations of Computing I and II, Data Structures and Parallelism, \\ Calculus III, Matrix Algebra with Applications
+\item {\bf Completed Coursework:} Computer Programming I, Calculus I and II
+\item {\bf Planned Coursework:} Computer Programming II, Foundations of Computing I and II, Data Structures and Parallelism,  \\ Calculus III, Matrix Algebra with Applications
+\item {\bf Activities:} Husky Robotics, Association of Computing Machinery (ACM)
 \end{education}
 
 \begin{education}{Hazen Senior High School}{August 2016 – June 2020}{}{Renton, WA}
 \item {\bf GPA:} 4.0 \hspace{5mm} {\bf Rank:} 1/383 \hspace{5mm} {\bf SAT:} 1570 \hspace{5mm} {\bf SAT Math II:} 800 \hspace{5mm} {\bf SAT Physics:} 800 \hspace{5mm} {\bf AMC 12:} 85.5
 \item {\bf Activities:} Robotics Club (Project Manager), National Honor Society, Table Tennis Club (Co-Founder, Vice President)
-\item {\bf Awards:} National Merit Finalist, National AP Scholar, FTC Dean's List Semifinalist, Oliver M. Hazen Award
+\item {\bf Awards:} National Merit Finalist, National AP Scholar, FTC Dean's List Semifinalist, Oliver M. Hazen Award, Eagle Scout
 \end{education}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Husky Robotics}{October 2020 – Present}{Software Engineer}{Seattle, WA}
+\item Created robot pathfinding and autonomous navigation algorithms for a prototype Mars rover using C++
+\end{rSubsection}
+
+\begin{rSubsection}{Mathnasium}{May 2019 – June 2020}{Instructor}{Renton, WA}
+\item Taught students grades K-12 topics in math up to calculus and helped develop an intuitive understanding of math concepts
+\item Contributed to smooth operation of the center and interacted with parents and prospective customers
+\end{rSubsection}
+
+\begin{rSubsection}{FIRST Tech Challenge Team 8693: The Scarabs}{September 2016 – June 2020}{Project Manager}{Renton, WA}
+\item Led and mentored a team of over 20 members to successful completion of a competition robot and accompanying software
+%\item Guided technical creation of robots and accompanying software
+\item Implemented a TensorFlow-based object detection model in Java to be integrated with robot navigation algorithms
+\item Planned public events to introduce elementary and middle schoolers in Renton to STEM
+\item Increased team efficiency and optimized the development process
+\end{rSubsection}
+
+\begin{rSubsection}{The Museum of Flight}{September 2016 – December 2018}{Junior Docent}{Seattle, WA}
+\item Gave presentations on aviation history to Museum of Flight visitors as the Museum's first Junior Docent
+\item Made interactive exhibits designed to teach young kids about topics in aviation
+\end{rSubsection}
+
+%\begin{rSubsection}{Boy Scouts of America Troop 499}{June 2015 – June 2020}{Eagle Scout \& Assistant Senior Patrol Leader}{Newcastle, WA}
+%\item Led the planning and successful execution of a large-scale kitchen remodel project at Renton Lions Youth Camp
+%\item Planned and led troop meetings and volunteered in various community projects
+%\end{rSubsection}
 
 \end{rSection}
 
@@ -95,6 +99,12 @@
 
 \begin{rSection}{Projects}
 
+\begin{project}{\href{https://github.com/abhaybd/angles}{Angles}}{\href{https://github.com/abhaybd/angles}{github.com/abhaybd/angles}}{DubHacks 2020 – Newsprint Track Finalist (Top 3 out of 70+ Projects)}
+\item Developed a Chrome Extension that recommends news articles of opposite bias when a news website is visited
+\item Created using JavaScript, HTML, CSS, and Google Cloud Natural Language (NLP) to extract keywords from news articles
+\item Selected as a finalist in the Newsprint track and recognized as one of the top 3 projects out of over 70 projects
+\end{project}
+
 \begin{project}{\href{https://github.com/arnavthareja/music-analysis}{Popular Music Analysis}}{\href{https://github.com/arnavthareja/music-analysis}{github.com/arnavthareja/music-analysis}}{Personal Project – In Progress}
 \item Analyzed features in popular music using Python and searched for patterns
 \item Used the Spotify API to get data about popular music and features from Spotify
@@ -103,18 +113,14 @@
 
 \begin{project}{\href{https://yearbook-hhs.web.app/}{Yearbook 2020}}{\href{https://yearbook-hhs.web.app/}{yearbook-hhs.web.app}}{Personal Project}
 \item Designed and developed a web application for students and graduates to sign yearbooks virtually
-\item Created using HTML, CSS, JavaScript, and Google Firebase for user authentication, cloud storage, and NoSQL database
+\item Created using JavaScript, HTML, CSS, and Google Firebase for user authentication, cloud storage, and NoSQL database
 \end{project}
 
 \begin{project}{Table Tennis Sign-In}{}{Personal Project}
-\item Created a Java application to enable a quick and paperless sign-in process for Hazen High School's Table Tennis Club
+\item Built a Java application to enable a quick and paperless sign-in process for Hazen High School's Table Tennis Club
 \item Utilized the Google Sheets API to upload sign-in records to the club's Google Sheet for membership tracking and analytics
-\item Used Swing to create a Graphical User Interface for a smooth user experience
+%\item Used Swing to create a Graphical User Interface for a smooth user experience
 \end{project}
-
-%\begin{project}{\href{https://arnavthareja.github.io}{Personal Website}}{July 2020 – August 2020}{Personal Project}
-%\item Created a responsive, user-focused website design using HTML, SCSS, and JavaScript
-%\end{project}
 
 \end{rSection}
 
@@ -124,7 +130,7 @@
 
 \begin{rSection}{Skills}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages & Java, Python, JavaScript, HTML, CSS, SCSS \\
+Languages & Java, Python, C++, JavaScript, HTML, CSS \\
 Tools & Jupyter Notebook, Eclipse, Visual Studio Code, Git, GitHub, Microsoft Office \\
 Other Skills & Communication, Leadership, Project Management \\
 \end{tabular}
