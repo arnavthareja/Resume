@@ -1,6 +1,7 @@
 # Resume
-My resume, made in LaTeX  
+My resume, made with LaTeX  
 
-The original template is from [Ming Fong](https://www.github.com/evilpegasus), I have made some modifications
+See it here: https://arnavthareja.github.io/Resume/  
 
-Hosted at https://arnavthareja.github.io/Resume/
+
+The original template is from [Ming Fong](https://www.github.com/evilpegasus), and I have made some modifications
