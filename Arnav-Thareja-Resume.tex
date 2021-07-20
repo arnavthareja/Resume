@@ -24,7 +24,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.4in]{geometry} % Document margins
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
@@ -46,6 +46,7 @@
 \begin{education}{University of Washington}{Expected Graduation: June 2024}{Bachelor of Science, Computer Science}{Seattle, WA}
 \item {\bf Cumulative GPA:} 3.97
 \item {\bf Coursework:} Data Structures and Parallelism, The Hardware/Software Interface, System and Software Tools, Discrete Math, Probability and Statistics, Linear Algebra, Differential Equations
+\item {\bf Planned Coursework:} Algorithms, Operating Systems, Distributed Systems, Autonomous Robotics, Computer Vision, \\ Databases, Systems Programming
 %\item {\bf Activities:} Husky Robotics, Algorithmic Trading Club, UW Association for Computing Machinery (UW ACM), Cube Club
 \end{education}
 
@@ -62,7 +63,7 @@
 \begin{rSection}{Experience}
 
 \begin{rSubsection}{Personal Robotics Lab}{May 2021 – Present}{Undergraduate Researcher}{Seattle, WA}
-\item Working on multi-agent navigation and task allocation with \href{https://mushr.io}{MuSHR cars}
+\item Working on multi-agent autonomous navigation and task allocation with \href{https://mushr.io}{MuSHR cars}
 \item Designed and implemented algorithms for non-holonomic multi-agent navigation with optimal task allocation
 \item Built ROS (Robot Operating System) wrappers around algorithms to enable easy interfacing with existing systems
 \item Sped up robot trajectory comparison framework by 50x by directly analyzing ROS bags through the rosbag Python API
@@ -102,16 +103,16 @@
 
 \begin{rSection}{Projects}
 
-\begin{project}{\href{https://github.com/abhaybd/angles}{Angles}}{\href{https://github.com/abhaybd/angles}{github.com/abhaybd/angles}}{DubHacks 2020 – Newsprint Track Finalist (Top 3 out of 70+ Projects)}
-\item Developed a Chrome Extension that suggests news articles of opposite bias when a news website is visited
-\item Used Google Cloud NLP to extract relevant keywords from news articles to use in our opposite bias algorithm
-\item Selected as a finalist in the Newsprint track and recognized as one of the top 3 projects out of over 70 projects
-\end{project}
-
 \begin{project}{\href{https://github.com/arnavthareja/chess}{Chess}}{\href{https://github.com/arnavthareja/chess}{github.com/arnavthareja/chess}}{Personal Project}
 \item Built a chess game in Java that can be played in the terminal
 \item Implemented a minimax algorithm with alpha-beta pruning for automated gameplay with informed move selection
 \item Used a heuristic-based iterative deepening depth first search algorithm and memoization to improve runtime
+\end{project}
+
+\begin{project}{\href{https://github.com/abhaybd/angles}{Angles}}{\href{https://github.com/abhaybd/angles}{github.com/abhaybd/angles}}{DubHacks 2020 – Newsprint Track Finalist (Top 3 out of 70+ Projects)}
+\item Developed a Chrome Extension that suggests news articles of opposite bias when a news website is visited
+\item Used Google Cloud NLP to extract relevant keywords from news articles to use in our opposite bias algorithm
+\item Selected as a finalist in the Newsprint track and recognized as one of the top 3 projects out of over 70 projects
 \end{project}
 
 \begin{project}{\href{https://yearbook-hhs.web.app/}{Yearbook 2020}}{\href{https://yearbook-hhs.web.app/}{yearbook-hhs.web.app}}{Personal Project}
@@ -134,7 +135,7 @@
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Languages & Java, C++, Python, C, JavaScript, HTML, CSS \\
 Tools & ROS (Robot Operating System), Docker, GDB (GNU Debugger), Linux, CMake, Git, GitHub, LaTeX \\
-Other Skills & Communication, Leadership, Project Management \\
+%Other Skills & Communication, Leadership, Project Management \\
 \end{tabular}
 
 \end{rSection}

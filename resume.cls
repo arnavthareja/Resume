@@ -125,7 +125,7 @@
    \itemsep -0.4em \vspace{-0.4em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.2em} % Some space after the list of bullet points (Original was 0.5em)
+  \vspace{0.1em} % Some space after the list of bullet points (Original was 0.5em)
 }
 
 %----------------------------------------------------------------------------------------
@@ -143,7 +143,7 @@
    \itemsep -0.4em \vspace{-0.4em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.2em} % Some space after the list of bullet points (Original was 0.5em)
+  \vspace{0.1em} % Some space after the list of bullet points (Original was 0.5em)
 }
 
 %----------------------------------------------------------------------------------------
@@ -158,7 +158,7 @@
    \itemsep -0.4em \vspace{-0.4em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.2em} % Some space after the list of bullet points (Original was 0.5em)
+  \vspace{0.1em} % Some space after the list of bullet points (Original was 0.5em)
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
