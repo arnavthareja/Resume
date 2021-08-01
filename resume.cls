@@ -30,7 +30,7 @@
 
 % Set main fonts
 \usepackage{fontspec}
-\setmainfont[Color=black, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmainfont[Color=black, Path = fonts/lato/,BoldItalicFont=Lato-BoldItalic,BoldFont=Lato-Bold,ItalicFont=Lato-Italic]{Lato-Regular}
 
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
@@ -71,7 +71,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
+    \hfil{\MakeUppercase{\namesize \@name}}\hfil
     \nameskip\break
   \endgroup
 }
@@ -99,11 +99,11 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   %\sectionskip
-  \MakeUppercase{\bf #1} % Section title
+  \MakeUppercase{\textbf{#1}} % Section title
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{1.5em} % Margin within the section
+    \setlength{\leftmargin}{0.7em} % Margin within the section
   }
   \item[]
 }{
@@ -115,13 +115,12 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
+ {\textbf{#1}} \hfill {#2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=1em} % Removed bullet points from item lists (original line below)
-  % \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+  \begin{list}{-}{\leftmargin=1em}
    \itemsep -0.4em \vspace{-0.4em} % Compress items in list together for aesthetics
   }{
   \end{list}
@@ -133,13 +132,12 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{education}[4]{ % 4 input arguments - school name, year(s) attended, degree title and location
- {\bf #1} | {\em #4} \hfill {#2} % Bold school name, italicized location, and date on the right
+ {\textbf{#1}} | {\em #4} \hfill {#2} % Bold school name, italicized location, and date on the right
   \ifthenelse{\equal{#3}{}}{}{ % If the degree title is not specified, don't print it
   \\
   {\em #3} % Italic job title and location
   }\smallskip
-  \begin{list}{}{\leftmargin=0em} % Removed bullet points from item lists (original line below)
-  % \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+  \begin{list}{}{\leftmargin=0em}
    \itemsep -0.4em \vspace{-0.4em} % Compress items in list together for aesthetics
   }{
   \end{list}
@@ -151,10 +149,9 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{project}[3]{ % 3 input arguments - project name, timeframe, and project context (personal/class)
- {\bf #1} | {\em #3} \hfill {\em #2} % Bold project name, italicized context, and date on the right
+ {\textbf{#1}} | {\em #3} \hfill {\em #2} % Bold project name, italicized context, and date on the right
   \smallskip
-  \begin{list}{$\cdot$}{\leftmargin=1em} % Removed bullet points from item lists (original line below)
-  % \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+  \begin{list}{-}{\leftmargin=1em}
    \itemsep -0.4em \vspace{-0.4em} % Compress items in list together for aesthetics
   }{
   \end{list}
