@@ -24,7 +24,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.4in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.45in,right=0.5in,bottom=0.45in]{geometry} % Document margins
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
@@ -59,7 +59,7 @@
 
 \begin{rSubsection}{Personal Robotics Lab}{May 2021 – Present}{Undergraduate Researcher}{Seattle, WA}
 \item Working on multi-agent autonomous navigation and task allocation with \href{https://mushr.io}{MuSHR cars}
-\item Designed and implemented algorithms for non-holonomic multi-agent navigation with optimal task allocation in C++
+\item Designed and implemented planning algorithms for non-holonomic multi-agent navigation with task allocation in C++
 \item Built ROS (Robot Operating System) wrappers around algorithms to enable easy interfacing with existing systems
 \item Sped up robot trajectory comparison framework by 50x by directly analyzing ROS bags through the rosbag Python API
 \item Demonstrated and tested system capabilities and translation to real-world environments on physical robots
@@ -103,9 +103,9 @@
 \item Utilized JavaScript, HTML, CSS, and Google Firebase for user authentication, cloud storage, and NoSQL database
 \end{project}
 
-\begin{project}{\href{https://github.com/arnavthareja/clcbs\_ros}{CL-CBS ROS Wrapper}}{\href{https://github.com/arnavthareja/clcbs\_ros}{github.com/arnavthareja/clcbs\_ros}}{Personal Robotics Lab}
-\item Created a ROS wrapper and defined a ROS API around the Car-Like Conflict-Based Search (CL-CBS) algorithm using C++
-\item Extended CL-CBS functionality to allow for parameter reconfiguration and restriction of allowed motion primitives
+\begin{project}{\href{https://github.com/arnavthareja/clcbs\_ros}{CL-CBS (Car-Like Conflict-Based Search) ROS Wrapper}}{\href{https://github.com/arnavthareja/clcbs\_ros}{github.com/arnavthareja/clcbs\_ros}}{Personal Robotics Lab}
+\item Created a ROS wrapper and defined a ROS API around the CL-CBS multi-agent path planning algorithm using C++
+\item Extended CL-CBS to allow parameter reconfiguration and restriction of motion primitives in underlying Hybrid A* planner
 \end{project}
 
 \end{rSection}
@@ -117,7 +117,7 @@
 \begin{rSection}{Skills}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Languages & Java, C++, Python, C, JavaScript, HTML, CSS \\
-Tools & ROS (Robot Operating System), Docker, GDB (GNU Debugger), Linux, CMake, Git, GitHub, LaTeX \\
+Tools & ROS (Robot Operating System), Docker, GDB (GNU Debugger), Linux, CMake, Git, GitHub, LaTeX
 \end{tabular}
 
 \end{rSection}
