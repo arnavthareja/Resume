@@ -57,15 +57,17 @@
 \begin{rSection}{Experience}
 
 \begin{rSubsection}{Oracle Cloud Infrastructure}{June 2022 – September 2022}{Software Engineer Intern}{Seattle, WA}
-\item Working on the Virtual Machines Efficiency team within Oracle Cloud Infrastructure (OCI) Compute
+\item Worked as a part of the Virtual Machines Efficiency team within Oracle Cloud Infrastructure (OCI) Compute
 \item Designed and built a system to monitor usage of reserved compute resources and identify resources to be reclaimed
+\item Defined an actionable implementation strategy to address and fulfill system requirements
 \item Created internal usage metrics, dashboards, and alarms using Java and Oracle Monitoring Query Language (MQL)
 \end{rSubsection}
 
 \begin{rSubsection}{Personal Robotics Lab}{May 2021 – Present}{Undergraduate Researcher}{Seattle, WA}
 \item Working on multi-agent autonomous navigation and task allocation with \href{https://mushr.io}{MuSHR cars}
-\item Designed and implemented planning algorithms for non-holonomic multi-agent navigation and task allocation in C++
-\item Extended existing control algorithms to the multi-agent domain to eliminate agent collisions and improve robustness
+\item Created an open-source architecture for completing pushing-based manipulation tasks with multiple non-holonomic robots
+\item Designed and built motion planning algorithms for non-holonomic multi-agent navigation and task allocation in C++
+\item Extended and tuned model predictive control for the multi-agent domain to eliminate collisions and improve robustness
 \item Built ROS (Robot Operating System) wrappers around algorithms to enable easy interfacing with existing systems
 \item Sped up robot trajectory comparison framework by 50x by directly analyzing ROS bags through the rosbag Python API
 \item Demonstrated and tested system capabilities and translation to real-world environments on physical robots
@@ -74,9 +76,7 @@
 \begin{rSubsection}{Husky Robotics}{October 2020 – October 2021}{Software Engineer, Autonomous Navigation Subteam}{Seattle, WA}
 \item Created robot pathfinding and autonomous navigation algorithms for a prototype Mars rover using C++
 \item Integrated ROS2 into codebase using nodes and topics for navigation plan visualization
-\item Defined and implemented a navigation algorithm to locate targets based on approximate GPS coordinates
-\item Designed patterns for driving between two posts given GPS coordinates of the center
-\item Leveraged Docker for CI (continuous integration)
+\item Defined and implemented an algorithm to locate and navigate to targets given only noisy GPS coordinates
 \end{rSubsection}
 
 \end{rSection}
@@ -93,6 +93,11 @@
 \item Used a heuristic-based iterative deepening depth first search algorithm and memoization to improve runtime
 \end{project}
 
+\begin{project}{\href{https://github.com/arnavthareja/clcbs\_ros}{CL-CBS (Car-Like Conflict-Based Search) ROS Wrapper}}{\href{https://github.com/arnavthareja/clcbs\_ros}{github.com/arnavthareja/clcbs\_ros}}{Personal Robotics Lab}
+\item Created an open-source ROS wrapper and ROS API around the CL-CBS multi-agent path planning algorithm using C++
+\item Extended CL-CBS to allow parameter reconfiguration and restriction of motion primitives in underlying Hybrid A* planner
+\end{project}
+
 \begin{project}{\href{https://devpost.com/software/angles-sqdzlt}{Angles}}{\href{https://devpost.com/software/angles-sqdzlt}{devpost.com/software/angles-sqdzlt}}{DubHacks 2020 – Newsprint Track Finalist (Top 3 out of 70+ Projects)}
 \item Developed a Chrome Extension that suggests news articles of opposite bias when a news website is visited
 \item Leveraged Google Cloud NLP with JavaScript to extract keywords from news articles to use in our opposite bias algorithm
@@ -104,11 +109,6 @@
 \item Utilized JavaScript, HTML, CSS, and Google Firebase for user authentication, cloud storage, and NoSQL database
 \end{project}
 
-\begin{project}{\href{https://github.com/arnavthareja/clcbs\_ros}{CL-CBS (Car-Like Conflict-Based Search) ROS Wrapper}}{\href{https://github.com/arnavthareja/clcbs\_ros}{github.com/arnavthareja/clcbs\_ros}}{Personal Robotics Lab}
-\item Created a ROS wrapper and defined a ROS API around the CL-CBS multi-agent path planning algorithm using C++
-\item Extended CL-CBS to allow parameter reconfiguration and restriction of motion primitives in underlying Hybrid A* planner
-\end{project}
-
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -118,7 +118,7 @@
 \begin{rSection}{Skills}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Languages & Java, C++, Python, C, JavaScript, HTML, CSS, SQL \\
-Tools & NumPy, PyTorch, ROS (Robot Operating System), Docker, GDB (GNU Debugger), Linux, CMake, Git
+Tools & NumPy, PyTorch, ROS (Robot Operating System), Docker, Linux, CMake, Git
 \end{tabular}
 
 \end{rSection}
