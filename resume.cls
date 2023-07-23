@@ -132,12 +132,12 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{education}[4]{ % 4 input arguments - school name, year(s) attended, degree title and location
- {\textbf{#1}} | {\em #4} \hfill {#2} % Bold school name, italicized location, and date on the right
+ {\textbf{#1}} \hfill {#2} % Bold school name, italicized location, and date on the right
   \ifthenelse{\equal{#3}{}}{}{ % If the degree title is not specified, don't print it
   \\
-  {\em #3} % Italic job title and location
+  {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
-  \begin{list}{}{\leftmargin=0em}
+  \begin{list}{}{\leftmargin=1em}
    \itemsep -0.4em \vspace{-0.4em} % Compress items in list together for aesthetics
   }{
   \end{list}

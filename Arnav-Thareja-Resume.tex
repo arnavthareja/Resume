@@ -24,7 +24,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5in,top=0.45in,right=0.5in,bottom=0.45in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
@@ -43,10 +43,12 @@
 
 \begin{rSection}{Education}
 
-\begin{education}{University of Washington}{Expected Graduation: June 2024}{Bachelor of Science, Computer Science and Mathematics}{Seattle, WA}
-\item \textbf{Cumulative GPA:} 3.95
-\item \textbf{Coursework:} Algorithms, Autonomous Robotics, Computer Vision, Databases, Systems Programming, Optimization
-\item \textbf{Grad-Level Coursework:} Machine Learning, Deep Learning, Reinforcement Learning, Deep Robotic Learning
+\begin{education}{University of Washington}{Expected June 2024}{Master of Science, Computer Science}{Seattle, WA}
+\item \textbf{Coursework:} Machine Learning, Deep Learning, Reinforcement Learning, Deep Robotic Learning
+\end{education}
+
+\begin{education}{University of Washington}{Expected December 2023}{Bachelor of Science, Computer Science and Mathematics | GPA: 3.95}{Seattle, WA}
+\item \textbf{Coursework:} Algorithms, Robotics, Computer Vision, Databases, Systems Programming, Optimization, Probability
 \end{education}
 
 \end{rSection}
@@ -56,6 +58,12 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
+
+\begin{rSubsection}{Databricks}{June 2023 – September 2023}{Software Engineer Intern}{Bellevue, WA}
+\item Working on infrastructure to enable performance benchmarking across Databricks products
+\item Extended internal benchmarking framework to support a suite of profiling options for integrated profiler
+\item Buliding an internal tool to simplify profiler result access, visualization, and comparison
+\end{rSubsection}
 
 \begin{rSubsection}{Personal Robotics Lab}{May 2021 – Present}{Undergraduate Researcher}{Seattle, WA}
 \item Working on multi-agent autonomous navigation and task allocation with \href{https://mushr.io}{MuSHR cars}
@@ -67,17 +75,16 @@
 \item Demonstrated and tested system capabilities and translation to real-world environments on physical robots
 \end{rSubsection}
 
+\begin{rSubsection}{University of Washington}{March 2023 – June 2023}{Teaching Assistant}{Seattle, WA}
+\item Led lab sections and lab office hours for CSE 478: Autonomous Robotics
+\item Assisted students with conceptual robotics questions and robot software and hardware issues
+\end{rSubsection}
+
 \begin{rSubsection}{Oracle Cloud Infrastructure}{June 2022 – September 2022}{Software Engineer Intern}{Seattle, WA}
 \item Worked as a part of the Virtual Machines Efficiency team within Oracle Cloud Infrastructure (OCI) Compute
 \item Designed and built a system to monitor usage of reserved compute resources and identify resources to be reclaimed
 \item Defined an actionable implementation strategy to address and fulfill system requirements
 \item Created internal usage metrics, dashboards, and alarms using Java and Oracle Monitoring Query Language (MQL)
-\end{rSubsection}
-
-\begin{rSubsection}{Husky Robotics}{October 2020 – October 2021}{Software Engineer, Autonomous Navigation Subteam}{Seattle, WA}
-\item Created robot pathfinding and autonomous navigation algorithms for a prototype Mars rover using C++
-\item Integrated ROS2 into codebase using nodes and topics for navigation plan visualization
-\item Defined and implemented an algorithm to locate and navigate to targets given only noisy GPS coordinates
 \end{rSubsection}
 
 \end{rSection}
@@ -87,17 +94,6 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Projects}
-
-\begin{project}{\href{https://github.com/arnavthareja/chess}{Chess}}{\href{https://github.com/arnavthareja/chess}{github.com/arnavthareja/chess}}{Personal Project}
-\item Built a chess game in Java that can be played in the terminal
-\item Implemented a minimax algorithm with alpha-beta pruning for automated gameplay with informed move selection
-\item Used a heuristic-based iterative deepening depth first search algorithm and memoization to improve runtime
-\end{project}
-
-\begin{project}{\href{https://github.com/arnavthareja/clcbs\_ros}{CL-CBS (Car-Like Conflict-Based Search) ROS Wrapper}}{\href{https://github.com/arnavthareja/clcbs\_ros}{github.com/arnavthareja/clcbs\_ros}}{Personal Robotics Lab}
-\item Created an open-source ROS wrapper and ROS API around the CL-CBS multi-agent path planning algorithm using C++
-\item Extended CL-CBS to allow parameter reconfiguration and restriction of motion primitives in underlying Hybrid A* planner
-\end{project}
 
 \begin{project}{\href{https://devpost.com/software/angles-sqdzlt}{Angles}}{\href{https://devpost.com/software/angles-sqdzlt}{devpost.com/software/angles-sqdzlt}}{DubHacks 2020 – Newsprint Track Finalist (Top 3 out of 70+ Projects)}
 \item Developed a Chrome Extension that suggests news articles of opposite bias when a news website is visited
@@ -118,8 +114,8 @@
 
 \begin{rSection}{Skills}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages & Java, C++, Python, C, JavaScript, HTML, CSS, SQL \\
-Tools & NumPy, PyTorch, ROS (Robot Operating System), Docker, Linux, CMake, Git
+Languages & Java, C++, Python, Scala, C, JavaScript, HTML, CSS, SQL \\
+Tools & NumPy, PyTorch, ROS (Robot Operating System), React, Docker, Linux, CMake, Git
 \end{tabular}
 
 \end{rSection}
